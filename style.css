@@ -18,11 +18,9 @@ html, body{
 }
 
 .centered{
-    max-width: 100%;
+    width: 100%;
 }
 
-@media (max-width: 576px) {
-    .logo{
-        width: 25vw;
-    }
+.max-height{
+    height: 100vh;
 }
