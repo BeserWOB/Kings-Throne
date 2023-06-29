@@ -49,7 +49,7 @@ html, body{
     color: white;
 }
 .hero-image{
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .custom-object-position {
