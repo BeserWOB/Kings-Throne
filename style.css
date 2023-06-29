@@ -4,12 +4,22 @@ html, body{
     font-family: 'Baskervville', serif;
     max-width: 1400px;
 }
+body{
+    background:  fixed;
+    background-position: center center;
+    background-size: cover;
+
+}
 .mt-hero{
     margin-top: 8rem;
 }
 
 .w-10{
     width: 10%;
+}
+
+.vh-80{
+    height: 80vh;
 }
 
 .logo{
