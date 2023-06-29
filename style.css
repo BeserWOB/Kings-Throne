@@ -40,6 +40,17 @@ html, body{
     transition: all 1s ease-in-out;
   }
   
+.gold{
+    color: goldenrod;
+}
+
+.btn-gold{
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+.hero-image{
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
 
 
 /* MEDIA QUERIES */
