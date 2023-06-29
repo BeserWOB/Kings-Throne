@@ -1,8 +1,8 @@
 html, body{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Baskervville', serif;
-    
+    max-width: 1400px;
 }
 .mt-hero{
     margin-top: 8rem;
@@ -52,12 +52,13 @@ html, body{
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.custom-object-position {
+    object-position: center;
+  }
+
 
 /* MEDIA QUERIES */
 @media (max-width: 425px){
-    body{
-        text-align: center;
-    }
     .logo{
         width: 25%;
     }
