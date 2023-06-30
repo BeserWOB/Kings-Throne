@@ -4,6 +4,13 @@ html, body{
     font-family: 'Baskervville', serif;
     max-width: 1700px;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 155px;
+  }
+
+  
+
 body{
     background:  fixed;
     background-position: center center;
@@ -15,8 +22,8 @@ body{
     width: 10%;
 }
 
-.vh-80{
-    height: 80vh;
+.vh-70{
+    height: 70vh;
 }
 
 .mt-hero-text{
@@ -48,8 +55,12 @@ body{
 .navbar-scroll {
     background-color: whitesmoke;
     box-shadow: 0 0 5px #212121;
-    transition: all 1s ease-in-out;
+    transition: all .6s ease-in-out;
   }
+
+.navbar-scroll > a{
+    
+}
   
 .gold{
     color: goldenrod;
@@ -63,9 +74,21 @@ body{
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.custom-object-position {
+.center-object-position {
     object-position: center;
   }
+.top-object-position{
+    object-position: top;
+}
+
+
+
+  /* Edited classes */
+
+  .nav-link {
+   color: rgba(218, 165, 32, 1);
+  }
+  
 
 
 /* MEDIA QUERIES */
