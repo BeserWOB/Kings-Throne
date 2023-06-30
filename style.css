@@ -57,10 +57,6 @@ body{
     box-shadow: 0 0 5px #212121;
     transition: all .6s ease-in-out;
   }
-
-.navbar-scroll > a{
-    
-}
   
 .gold{
     color: goldenrod;
