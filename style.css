@@ -6,7 +6,6 @@ html, body{
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 155px;
   }
 
   
@@ -34,7 +33,7 @@ body{
     max-width: 10rem;
 }
 .contact-images{
-    width: 2rem;
+    width: 3rem;
     transition: all .3s ease-in-out;
     filter: grayscale(.9);
 }
@@ -57,6 +56,13 @@ body{
     box-shadow: 0 0 5px #212121;
     transition: all .6s ease-in-out;
   }
+
+.transparent-header {
+    background-color: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  
   
 .gold{
     color: goldenrod;
@@ -70,12 +76,33 @@ body{
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.carousel-image{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
 .center-object-position {
     object-position: center;
   }
 .top-object-position{
     object-position: top;
 }
+
+.carousel-indicators button {
+    background-color: transparent; 
+    border: none; 
+    width: 10px; 
+    height: 30px; 
+    margin: 0 5px; 
+    padding: 0; 
+    border-radius: 0; 
+  }
+
+  .carousel-indicators .active {
+    background-color: rgb(255, 216, 116);
+    transform: scaleY(2); 
+  }
 
 
 
@@ -84,6 +111,13 @@ body{
   .nav-link {
    color: rgba(218, 165, 32, 1);
   }
+
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    color: rgb(255, 216, 116);
+   }
+  
   
 
 
