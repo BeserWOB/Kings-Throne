@@ -1,11 +1,26 @@
+
+  /* Edited Bootstrap classes */
+
+  .nav-link {
+   color: rgba(218, 165, 32, 1);
+  }
+
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    color: rgb(255, 216, 116);
+   }
+  
+  
 html, body{
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Baskervville', serif;
     max-width: 1700px;
 }
-html {
-    scroll-behavior: smooth;
+.features {
+    scroll-margin-top: 80px;
+
   }
 
   
@@ -51,6 +66,8 @@ body{
     height: 100vh;
 }
 
+
+
 .navbar-scroll {
     background-color: whitesmoke;
     box-shadow: 0 0 5px #212121;
@@ -59,10 +76,8 @@ body{
 
 .transparent-header {
     background-color: transparent !important;
-    color: black !important;
     box-shadow: none !important;
   }
-  
   
 .gold{
     color: goldenrod;
@@ -105,20 +120,6 @@ body{
   }
 
 
-
-  /* Edited classes */
-
-  .nav-link {
-   color: rgba(218, 165, 32, 1);
-  }
-
-  .nav-link:active,
-  .nav-link:focus,
-  .nav-link:hover {
-    color: rgb(255, 216, 116);
-   }
-  
-  
 
 
 /* MEDIA QUERIES */
