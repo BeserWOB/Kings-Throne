@@ -3,12 +3,14 @@
 
   .nav-link {
    color: rgba(218, 165, 32, 1);
+   transition: all ease-in-out .3s;
   }
 
   .nav-link:active,
   .nav-link:focus,
   .nav-link:hover {
     color: rgb(255, 216, 116);
+    scale: 1.1;
    }
   
   /* additional classes */
@@ -49,13 +51,15 @@ body{
 }
 .contact-images{
     width: 3rem;
-    transition: all .3s ease-in-out;
-    filter: grayscale(.9);
+    transition: all .4s ease-in-out;
+    filter: grayscale(.8);
+    animation: pulse 3s infinite forwards ;
 }
 
 .contact-images:hover{
-    transform: scale(1.3);
+    animation-play-state: paused;
     filter: grayscale(0);
+    rotate: 360deg;
 }
 
 .centered{
@@ -64,6 +68,11 @@ body{
 
 .max-height{
     height: 100vh;
+}
+
+.icon{
+    height: 2rem;
+    width: 2rem;
 }
 
 
@@ -119,7 +128,21 @@ body{
     transform: scaleY(2); 
   }
 
+/* animations */
+@keyframes pulse {
+	0% {
+		transform: scale(1);
 
+	}
+
+	75% {
+		transform: scale(1.35);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
 
 
 /* MEDIA QUERIES */
@@ -145,6 +168,8 @@ body{
     .mt-hero-text{
         margin-top: 8rem;
 }}
+
+
 
 
 
