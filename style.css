@@ -11,10 +11,11 @@
     color: rgb(255, 216, 116);
    }
   
-  
+  /* additional classes */
 html, body{
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 0;
     font-family: 'Baskervville', serif;
     max-width: 1700px;
 }
@@ -22,7 +23,6 @@ html, body{
     scroll-margin-top: 80px;
 
   }
-
   
 
 body{
