@@ -1,16 +1,22 @@
 
   /* Edited Bootstrap classes */
 
+  .active{
+    border:rgb(255, 216, 116) solid 1px !important;
+    color: rgb(255, 216, 116) !important;
+    border-radius: 1rem;
+  }
+
   .nav-link {
    color: rgba(218, 165, 32, 1);
-   transition: all ease-in-out .3s;
+   transition: all ease-in-out .2s;
   }
 
   .nav-link:active,
   .nav-link:focus,
   .nav-link:hover {
     color: rgb(255, 216, 116);
-    scale: 1.1;
+    scale: 1.05;
    }
   
   /* additional classes */
@@ -51,14 +57,18 @@ body{
 }
 
 .logo{
-    width: 15vw;
-    max-width: 300px; 
-    min-width: 100px; 
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    width: 40vw;
+    max-width: 190px; 
+    min-width: 90px; 
     transition: all .1s ease-in-out;
 
 }
 .logo-scroll{
-    max-width: 5vw;
+    max-width: 4vw;
     transition: all .1s ease-in-out;
 }
 .contact-images{
@@ -90,8 +100,8 @@ body{
 
 
 .navbar-scroll {
-    background-color: whitesmoke;
-    box-shadow: 0 0 5px #212121;
+    background-color: white;
+    box-shadow: 0 0 5px #2d2c2c;
     transition: all .6s ease-in-out;
   }
 

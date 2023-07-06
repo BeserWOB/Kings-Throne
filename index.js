@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     let logo = document.querySelector('.logo');
 
 
-    if (window.scrollY > 100) {
+    if (window.scrollY > 30) {
       header.classList.add('navbar-scroll');
       logo.classList.add('logo-scroll');
     } else {
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
 
 
   window.addEventListener('scroll', function() {
-    let carouselSection = document.getElementById('images-section');
+    let carouselSection = document.getElementById('images');
     let header = document.querySelector('.header');
     let logo = document.querySelector('.logo');
     let navbarBottom = document.querySelector('.header').getBoundingClientRect().bottom;
