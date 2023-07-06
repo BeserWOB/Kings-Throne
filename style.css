@@ -21,11 +21,12 @@ html, body{
     font-family: 'Baskervville', serif;
     max-width: 1700px;
 }
+html{
+    scroll-behavior: smooth;
+}
 .features {
     scroll-margin-top: 80px;
-
-  }
-  
+}
 
 body{
     background:  fixed;
@@ -45,9 +46,19 @@ body{
 .mt-hero-text{
     margin-top: 0rem;
 }
+.header{
+    max-height: 100px;
+}
 
 .logo{
-    max-width: 10rem;
+    width: 15vw;
+    max-width: 300px;  
+    transition: all .1s ease-in-out;
+
+}
+.logo-scroll{
+    max-width: 5vw;
+    transition: all .1s ease-in-out;
 }
 .contact-images{
     width: 3rem;
@@ -125,37 +136,34 @@ body{
 
   .carousel-indicators .active {
     background-color: rgb(255, 216, 116);
-    transform: scaleY(2); 
+    transform: scaleY(2);
   }
 
-/* animations */
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-
-	}
-
-	75% {
-		transform: scale(1.35);
-	}
-
-	100% {
-		transform: scale(1);
-	}
+.icon{
+    width: 4rem;
+    height: 4rem;
 }
+
+.icon path{
+    fill: transparent;
+    stroke-width: 1;
+    stroke: goldenrod;
+}
+
+
 
 
 /* MEDIA QUERIES */
 @media (max-width: 425px){
     .logo{
-        width: 75px;
+
     }
 
 }
 
 @media (max-width: 767px){
     .logo{
-        width: 100px;
+
     }
     .hero-image{
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
@@ -171,5 +179,29 @@ body{
 
 
 
+/* Animations */
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	70% {
+		transform: scale(1.35);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+/* 
+SVG 0 is 5450.4 px long
+SVG 1 is 3660.9 px long
+SVG 2 is 2541.4 px long
+SVG 3 is 4125.6 px long
+SVG 4 is 7303.0 px long
+SVG 5 is 4454.1 px long */
 
 
