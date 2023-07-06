@@ -1,211 +1,228 @@
+/* Edited Bootstrap classes */
 
-  /* Edited Bootstrap classes */
-
-  .active{
-    border:rgb(255, 216, 116) solid 1px !important;
-    color: rgb(255, 216, 116) !important;
-    border-radius: 1rem;
-  }
-
-  .nav-link {
-   color: rgba(218, 165, 32, 1);
-   transition: all ease-in-out .2s;
-  }
-
-  .nav-link:active,
-  .nav-link:focus,
-  .nav-link:hover {
-    color: rgb(255, 216, 116);
-    scale: 1.05;
-   }
-  
-  /* additional classes */
-html, body{
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Baskervville', serif;
-    max-width: 1700px;
-}
-html{
-    scroll-behavior: smooth;
-}
-.features {
-    scroll-margin-top: 80px;
+.active {
+  border: rgb(255, 216, 116) solid 1px !important;
+  color: rgb(255, 216, 116) !important;
+  border-radius: 1rem;
 }
 
-body{
-    background:  fixed;
-    background-position: center center;
-    background-size: cover;
-
+.nav-link {
+  color: rgba(218, 165, 32, 1);
+  transition: all ease-in-out 0.2s;
 }
 
-.w-10{
-    width: 10%;
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: rgb(255, 216, 116);
+  scale: 1.05;
 }
 
-.vh-70{
-    height: 70vh;
+/* additional classes */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Baskervville", serif;
+  max-width: 1700px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.breed {
+  scroll-margin-top: 100px;
 }
 
-.mt-hero-text{
-    margin-top: 0rem;
-}
-.header{
-    max-height: 100px;
-}
-
-.logo{
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-
-    width: 40vw;
-    max-width: 190px; 
-    min-width: 90px; 
-    transition: all .1s ease-in-out;
-
-}
-.logo-scroll{
-    max-width: 4vw;
-    transition: all .1s ease-in-out;
-}
-.contact-images{
-    width: 3rem;
-    transition: all .4s ease-in-out;
-    filter: grayscale(.8);
-    animation: pulse 3s infinite forwards ;
+body {
+  background: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
-.contact-images:hover{
-    animation-play-state: paused;
-    filter: grayscale(0);
-    rotate: 360deg;
+.w-10 {
+  width: 10%;
 }
 
-.centered{
-    width: 100%;
+.vh-70 {
+  height: 70vh;
 }
 
-.max-height{
-    height: 100vh;
+.mt-hero-text {
+  margin-top: 0rem;
+}
+.header {
+  max-height: 100px;
 }
 
-.icon{
-    height: 2rem;
-    width: 2rem;
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  width: 40vw;
+  max-width: 190px;
+  min-width: 90px;
+  transition: all 0.1s ease-in-out;
+}
+.logo-scroll {
+  max-width: 4vw;
+  transition: all 0.1s ease-in-out;
+}
+.contact-images {
+  width: 3rem;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(0.8);
+  animation: pulse 3s infinite forwards;
 }
 
+.contact-images:hover {
+  animation-play-state: paused;
+  filter: grayscale(0);
+  rotate: 360deg;
+}
 
+.centered {
+  width: 100%;
+}
+
+.max-height {
+  height: 100vh;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
 
 .navbar-scroll {
-    background-color: white;
-    box-shadow: 0 0 5px #2d2c2c;
-    transition: all .6s ease-in-out;
-  }
+  background-color: white;
+  box-shadow: 0 0 5px #2d2c2c;
+  transition: all 0.6s ease-in-out;
+}
 
 .transparent-header {
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-  
-.gold{
-    color: goldenrod;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
-.btn-gold{
-    background-color: goldenrod;
-    color: white;
-}
-.hero-image{
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+.gold {
+  color: goldenrod;
 }
 
-.carousel-image{
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+.btn-gold {
+  background-color: goldenrod;
+  color: white;
+}
+.hero-image {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-
+.carousel-image {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
 
 .center-object-position {
-    object-position: center;
-  }
-.top-object-position{
-    object-position: top;
+  object-position: center;
+}
+.top-object-position {
+  object-position: top;
 }
 
 .carousel-indicators button {
-    background-color: transparent; 
-    border: none; 
-    width: 10px; 
-    height: 30px; 
-    margin: 0 5px; 
-    padding: 0; 
-    border-radius: 0; 
-  }
-
-  .carousel-indicators .active {
-    background-color: rgb(255, 216, 116);
-    transform: scaleY(2);
-  }
-
-.icon{
-    width: 4rem;
-    height: 4rem;
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0;
+  border-radius: 0;
 }
 
-.icon path{
-    fill: transparent;
-    stroke-width: 1;
-    stroke: goldenrod;
+.carousel-indicators .active {
+  background-color: rgb(255, 216, 116);
+  transform: scaleY(2);
 }
 
+.svg-icon {
+  width: 5rem;
+  height: 5rem;
+}
 
+.svg-icon path {
+  fill: transparent;
+  stroke-width: 5;
+  stroke: rgba(218, 165, 32, 1);
+}
 
+.svg-icon-animate path {
+  animation: line-anima 4s ease forwards .5s;
+}
+
+#svg-1 path {
+  stroke-dasharray: 5450px;
+  stroke-dashoffset: 5450px;
+}
+#svg-2 path {
+  stroke-dasharray: 3660px;
+  stroke-dashoffset: 3660px;
+}
+#svg-3 path {
+  stroke-dasharray: 2541px;
+  stroke-dashoffset: 2541px;
+}
+#svg-4 path {
+  stroke-dasharray: 4125px;
+  stroke-dashoffset: 4125px;
+}
+#svg-5 path {
+  stroke-dasharray: 7303px;
+  stroke-dashoffset: 7303px;
+}
+#svg-6 path {
+  stroke-dasharray: 4454px;
+  stroke-dashoffset: 4454px;
+}
+
+@keyframes line-anima {
+  to {
+    stroke-dashoffset: 0;
+    fill: rgba(218, 165, 32, 1);
+  }
+}
 
 /* MEDIA QUERIES */
-@media (max-width: 425px){
-    .logo{
-
-    }
-
+@media (max-width: 425px) {
 }
 
-@media (max-width: 767px){
-    .logo{
-
-    }
-    .hero-image{
-        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-        max-height: 60vh;
-    }
+@media (max-width: 767px) {
+  .hero-image {
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    max-height: 60vh;
+  }
 }
 
-
-@media(min-width: 768px) {
-    .mt-hero-text{
-        margin-top: 8rem;
-}}
-
-
+@media (min-width: 768px) {
+  .mt-hero-text {
+    margin-top: 8rem;
+  }
+}
 
 /* Animations */
 
 @keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
 
-	70% {
-		transform: scale(1.35);
-	}
+  70% {
+    transform: scale(1.35);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
-
 
 /* 
 SVG 0 is 5450.4 px long
@@ -214,5 +231,3 @@ SVG 2 is 2541.4 px long
 SVG 3 is 4125.6 px long
 SVG 4 is 7303.0 px long
 SVG 5 is 4454.1 px long */
-
-
