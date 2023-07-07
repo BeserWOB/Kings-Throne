@@ -44,6 +44,12 @@ body {
 .vh-70 {
   height: 70vh;
 }
+.vh-50{
+  height: 50vh;
+}
+.custom-card-vh{
+  height: 50vh;
+}
 
 .mt-hero-text {
   margin-top: 0rem;
@@ -68,6 +74,7 @@ body {
 }
 
 .footer-logo{
+  width: 90vw;
   max-width: 400px;
 }
 .contact-images {
@@ -186,21 +193,21 @@ body {
   stroke-dashoffset: 4454px;
 }
 
-@keyframes line-anima {
-  to {
-    stroke-dashoffset: 0;
-    fill: rgba(218, 165, 32, 1);
-  }
-}
 
 /* MEDIA QUERIES */
 @media (max-width: 425px) {
+  .custom-card-vh{
+    height: 90vh;
+  }
 }
 
 @media (max-width: 767px) {
   .hero-image {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     max-height: 60vh;
+  }
+  .custom-card-vh{
+    height: 70vh;
   }
 }
 
@@ -211,6 +218,12 @@ body {
 }
 
 /* Animations */
+@keyframes line-anima {
+  to {
+    stroke-dashoffset: 0;
+    fill: rgba(218, 165, 32, 1);
+  }
+}
 
 @keyframes pulse {
   0% {
