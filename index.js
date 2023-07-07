@@ -38,28 +38,52 @@ window.addEventListener("scroll", function () {
 
 /* Onscroll animation of the SVG Icons for breed section */
 window.addEventListener('scroll', () => {
-  let svgIcons = document.querySelectorAll('.svg-icon');
 
-  svgIcons.forEach(svgIcon => {
-    let svgIconTop = svgIcon.getBoundingClientRect().top;
-    let svgIconBottom = svgIcon.getBoundingClientRect().bottom;
 
-    // Get the bottom position of the viewport
-    let viewportBottom = window.innerHeight;
+  let svgIcon1 = document.getElementById('svg-1');
+  let svgIcon2 = document.getElementById('svg-2');
+  let svgIcon3 = document.getElementById('svg-3');
+  let svgIcon4 = document.getElementById('svg-4');
+  let svgIcon5 = document.getElementById('svg-5');
+  let svgIcon6 = document.getElementById('svg-6');
 
-    if (svgIconTop < viewportBottom && svgIconBottom > 0) {
-      setTimeout(() => {
-        svgIcon.classList.add("svg-icons-animate");
-      }, 100); // Adjust the delay as needed
-    } else {
-      svgIcon.classList.remove("svg-icons-animate");
+  let svgIcon1Bottom = svgIcon1.getBoundingClientRect().bottom;
+  let svgIcon2Bottom = svgIcon2.getBoundingClientRect().bottom;
+  let svgIcon3Bottom = svgIcon3.getBoundingClientRect().bottom;
+  let svgIcon4Bottom = svgIcon4.getBoundingClientRect().bottom;
+  let svgIcon5Bottom = svgIcon5.getBoundingClientRect().bottom;
+  let svgIcon6Bottom = svgIcon6.getBoundingClientRect().bottom;
+
+
+
+    if(window.innerHeight > svgIcon1Bottom){
+      svgIcon1.classList.add('svg-icon-animate')
     }
+    if(window.innerHeight > svgIcon2Bottom){
+      svgIcon2.classList.add('svg-icon-animate')
+    }
+    if(window.innerHeight > svgIcon3Bottom){
+      svgIcon3.classList.add('svg-icon-animate')
+    }
+    if(window.innerHeight > svgIcon4Bottom){
+      svgIcon4.classList.add('svg-icon-animate')
+    }
+    if(window.innerHeight > svgIcon5Bottom){
+      svgIcon5.classList.add('svg-icon-animate')
+    }
+    if(window.innerHeight > svgIcon6Bottom){
+      svgIcon6.classList.add('svg-icon-animate')
+    }
+
+  
+
+
+
+
+
   });
-});
 
 
-
-console.log(document.querySelectorAll('.svg-icon'));
 
 /* SVG Path length calculator */
 /*   const pathLength = document.querySelectorAll('#svgg path')
