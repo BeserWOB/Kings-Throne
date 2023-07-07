@@ -1,4 +1,3 @@
-
 /* Onscroll header turns white */
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
@@ -37,52 +36,24 @@ window.addEventListener("scroll", function () {
 });
 
 /* Onscroll animation of the SVG Icons for breed section */
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
+  const svgIcons = [
+    { element: document.getElementById("svg-1"), bottom: 0 },
+    { element: document.getElementById("svg-2"), bottom: 0 },
+    { element: document.getElementById("svg-3"), bottom: 0 },
+    { element: document.getElementById("svg-4"), bottom: 0 },
+    { element: document.getElementById("svg-5"), bottom: 0 },
+    { element: document.getElementById("svg-6"), bottom: 0 }
+  ];
 
+  svgIcons.forEach(svgIcon => {
+    svgIcon.bottom = svgIcon.element.getBoundingClientRect().bottom + (window.innerHeight / 5);
 
-  let svgIcon1 = document.getElementById('svg-1');
-  let svgIcon2 = document.getElementById('svg-2');
-  let svgIcon3 = document.getElementById('svg-3');
-  let svgIcon4 = document.getElementById('svg-4');
-  let svgIcon5 = document.getElementById('svg-5');
-  let svgIcon6 = document.getElementById('svg-6');
-
-  let svgIcon1Bottom = svgIcon1.getBoundingClientRect().bottom;
-  let svgIcon2Bottom = svgIcon2.getBoundingClientRect().bottom;
-  let svgIcon3Bottom = svgIcon3.getBoundingClientRect().bottom;
-  let svgIcon4Bottom = svgIcon4.getBoundingClientRect().bottom;
-  let svgIcon5Bottom = svgIcon5.getBoundingClientRect().bottom;
-  let svgIcon6Bottom = svgIcon6.getBoundingClientRect().bottom;
-
-
-
-    if(window.innerHeight > svgIcon1Bottom){
-      svgIcon1.classList.add('svg-icon-animate')
+    if (window.innerHeight > svgIcon.bottom) {
+      svgIcon.element.classList.add("svg-icon-animate");
     }
-    if(window.innerHeight > svgIcon2Bottom){
-      svgIcon2.classList.add('svg-icon-animate')
-    }
-    if(window.innerHeight > svgIcon3Bottom){
-      svgIcon3.classList.add('svg-icon-animate')
-    }
-    if(window.innerHeight > svgIcon4Bottom){
-      svgIcon4.classList.add('svg-icon-animate')
-    }
-    if(window.innerHeight > svgIcon5Bottom){
-      svgIcon5.classList.add('svg-icon-animate')
-    }
-    if(window.innerHeight > svgIcon6Bottom){
-      svgIcon6.classList.add('svg-icon-animate')
-    }
-
-  
-
-
-
-
-
   });
-
+});
 
 
 /* SVG Path length calculator */
