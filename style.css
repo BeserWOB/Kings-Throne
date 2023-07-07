@@ -40,9 +40,6 @@ body {
   background-size: cover;
 }
 
-.w-10 {
-  width: 10%;
-}
 
 .vh-70 {
   height: 70vh;
@@ -60,7 +57,7 @@ body {
   top: 1rem;
   left: 1rem;
 
-  width: 40vw;
+  width: 30vw;
   max-width: 190px;
   min-width: 90px;
   transition: all 0.1s ease-in-out;
