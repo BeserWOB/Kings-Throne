@@ -18,6 +18,20 @@
   scale: 1.05;
 }
 
+.carousel-indicators button {
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.carousel-indicators .active {
+  background-color: rgba(218, 165, 32, 1);
+  transform: scaleY(2);
+}
 /* additional classes */
 html,
 body {
@@ -38,6 +52,10 @@ body {
   background: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+.text-shadow{
+  text-shadow: 0 0 10px #212121;
 }
 
 
@@ -119,8 +137,14 @@ body {
 }
 
 .btn-gold {
-  background-color: goldenrod;
+  background-color: rgba(218, 165, 32, 1);
   color: white;
+}
+.btn-gold:hover,
+.btn-gold:active,
+.btn-gold:focus{
+  background-color: transparent;
+  border: solid 1px rgb(255, 216, 116);
 }
 .hero-image {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
@@ -137,20 +161,6 @@ body {
   object-position: top;
 }
 
-.carousel-indicators button {
-  background-color: transparent;
-  border: none;
-  width: 10px;
-  height: 30px;
-  margin: 0 5px;
-  padding: 0;
-  border-radius: 0;
-}
-
-.carousel-indicators .active {
-  background-color: rgb(255, 216, 116);
-  transform: scaleY(2);
-}
 
 .svg-icon {
   width: 5rem;
