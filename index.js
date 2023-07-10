@@ -36,6 +36,7 @@ window.addEventListener("scroll", function () {
   }
 });
  */
+
 /* Onscroll animation of the SVG Icons for breed section */
 window.addEventListener("scroll", () => {
   const svgIcons = [
