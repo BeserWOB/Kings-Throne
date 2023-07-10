@@ -4,15 +4,16 @@ window.addEventListener("scroll", function () {
   let logo = document.querySelector(".logo");
 
   if (window.scrollY > 30) {
-    header.classList.add("navbar-scroll");
+    header.classList.add("header-scroll");
     logo.classList.add("logo-scroll");
   } else {
-    header.classList.remove("navbar-scroll");
+    header.classList.remove("header-scroll");
     logo.classList.remove("logo-scroll");
   }
 });
 
 /* Onscroll Header is transparent when it comes to images section */
+/* 
 window.addEventListener("scroll", function () {
   let carouselSection = document.getElementById("images");
   let header = document.querySelector(".header");
@@ -34,7 +35,7 @@ window.addEventListener("scroll", function () {
     header.classList.remove("transparent-header");
   }
 });
-
+ */
 /* Onscroll animation of the SVG Icons for breed section */
 window.addEventListener("scroll", () => {
   const svgIcons = [

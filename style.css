@@ -81,6 +81,19 @@ body {
 }
 .header {
   max-height: 100px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.header-scroll {
+  background-color: #002625;
+  border-bottom: rgb(255, 216, 116) solid 1px;
+  box-shadow: 0 0 10px #002625;
+  transition: all 0.3s ease-in-out;
+}
+
+.transparent-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .logo {
@@ -128,16 +141,6 @@ body {
   width: 2rem;
 }
 
-.navbar-scroll {
-  background-color: white;
-  box-shadow: 0 0 5px #2d2c2c;
-  transition: all 0.6s ease-in-out;
-}
-
-.transparent-header {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
 
 .gold {
   color: goldenrod;
