@@ -43,18 +43,18 @@ window.addEventListener("scroll", () => {
     { element: document.getElementById("svg-3"), bottom: 0 },
     { element: document.getElementById("svg-4"), bottom: 0 },
     { element: document.getElementById("svg-5"), bottom: 0 },
-    { element: document.getElementById("svg-6"), bottom: 0 }
+    { element: document.getElementById("svg-6"), bottom: 0 },
   ];
 
-  svgIcons.forEach(svgIcon => {
-    svgIcon.bottom = svgIcon.element.getBoundingClientRect().bottom + (window.innerHeight / 5);
+  svgIcons.forEach((svgIcon) => {
+    svgIcon.bottom =
+      svgIcon.element.getBoundingClientRect().bottom + window.innerHeight / 5;
 
     if (window.innerHeight > svgIcon.bottom) {
       svgIcon.element.classList.add("svg-icon-animate");
     }
   });
 });
-
 
 /* SVG Path length calculator */
 /*   const pathLength = document.querySelectorAll('#svgg path')

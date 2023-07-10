@@ -54,26 +54,25 @@ body {
   background-size: cover;
 }
 
-.text-shadow{
+.text-shadow {
   text-shadow: 0 0 10px #212121;
 }
 
-.cards-dimensions{
+.cards-dimensions {
   width: 200px;
   height: 300px;
 }
 
-
 .vh-70 {
   height: 70vh;
 }
-.vh-50{
+.vh-50 {
   height: 50vh;
 }
-.custom-card-vh{
+.custom-card-vh {
   height: 70vh;
 }
-.custom-images-vh{
+.custom-images-vh {
   height: 100vh;
 }
 
@@ -99,7 +98,7 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.footer-logo{
+.footer-logo {
   width: 90vw;
   max-width: 400px;
 }
@@ -150,7 +149,7 @@ body {
 }
 .btn-gold:hover,
 .btn-gold:active,
-.btn-gold:focus{
+.btn-gold:focus {
   background-color: transparent;
   border: solid 1px rgb(255, 216, 116);
 }
@@ -169,7 +168,6 @@ body {
   object-position: top;
 }
 
-
 .svg-icon {
   width: 5rem;
   height: 5rem;
@@ -181,9 +179,8 @@ body {
   stroke: rgba(218, 165, 32, 1);
 }
 
-
 .svg-icon-animate path {
-  animation: line-anima 4s ease forwards .5s;
+  animation: line-anima 4s ease forwards 0.5s;
 }
 
 #svg-1 path {
@@ -211,17 +208,16 @@ body {
   stroke-dashoffset: 4454px;
 }
 
-.no-wrap{
+.no-wrap {
   flex-wrap: nowrap;
 }
 
-
 /* MEDIA QUERIES */
 @media (max-width: 425px) {
-  .custom-card-vh{
+  .custom-card-vh {
     height: 90vh;
   }
-  .custom-images-vh{
+  .custom-images-vh {
     height: 40vh;
   }
 }
@@ -231,10 +227,10 @@ body {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     max-height: 60vh;
   }
-  .custom-card-vh{
+  .custom-card-vh {
     height: 70vh;
   }
-  .custom-images-vh{
+  .custom-images-vh {
     height: 70vh;
   }
 }
