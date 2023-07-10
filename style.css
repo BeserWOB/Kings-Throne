@@ -49,13 +49,18 @@ html {
 }
 
 body {
-  background: fixed;
+  background: /* url('./images/background.jpeg') */ fixed;
   background-position: center center;
   background-size: cover;
 }
 
 .text-shadow{
   text-shadow: 0 0 10px #212121;
+}
+
+.cards-dimensions{
+  width: 200px;
+  height: 300px;
 }
 
 
@@ -66,7 +71,10 @@ body {
   height: 50vh;
 }
 .custom-card-vh{
-  height: 50vh;
+  height: 70vh;
+}
+.custom-images-vh{
+  height: 100vh;
 }
 
 .mt-hero-text {
@@ -203,11 +211,18 @@ body {
   stroke-dashoffset: 4454px;
 }
 
+.no-wrap{
+  flex-wrap: nowrap;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 425px) {
   .custom-card-vh{
     height: 90vh;
+  }
+  .custom-images-vh{
+    height: 40vh;
   }
 }
 
@@ -217,6 +232,9 @@ body {
     max-height: 60vh;
   }
   .custom-card-vh{
+    height: 70vh;
+  }
+  .custom-images-vh{
     height: 70vh;
   }
 }
