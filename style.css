@@ -111,8 +111,10 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .header-scroll {
-  background-color: white;
+  background-color: #212529;
+  border-bottom: rgb(255, 216, 116) solid 1px;
   transition: all 0.3s ease-in-out;
+
 }
 
 .transparent-header {
