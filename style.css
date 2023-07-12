@@ -49,7 +49,7 @@ body {
   max-width: 1700px;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 .breed {
   scroll-margin-top: 100px;
@@ -69,8 +69,11 @@ html {
 }
 
 .lands-dimesions{
-  height: 200px;
-  width: 200px;
+  height: 52vw;
+  width: 40vw;
+  text-align: center;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .cards-dimensions {
@@ -114,7 +117,9 @@ html {
   background-color: #212529;
   border-bottom: rgb(255, 216, 116) solid 1px;
   transition: all 0.3s ease-in-out;
-
+}
+.navbar-toggler-icon > * {
+  background-color: blue;
 }
 
 .transparent-header {
@@ -250,8 +255,8 @@ html {
     height: 40vh;
   }
   .lands-dimesions{
-    height: 100px;
-    width: 48vh;
+    height: 48vw;
+    width: 37vw;
   }
 }
 
@@ -266,7 +271,16 @@ html {
   .custom-images-vh {
     height: 70vh;
   }
+
 }
+
+/* @media (max-width: 575px) {
+  .lands-dimesions{
+    height: 52vw;
+    width: 40vw;
+    text-align: center;
+  }
+} */
 
 @media (min-width: 768px) {
   .mt-hero-text {
