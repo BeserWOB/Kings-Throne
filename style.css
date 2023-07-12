@@ -49,13 +49,19 @@ body {
   max-width: 1700px;
 }
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 .breed {
   scroll-margin-top: 100px;
 }
 .images {
   scroll-margin-top: 180px;
+}
+.testimonials{
+  scroll-margin-top: 100px;
+}
+.competitions{
+  scroll-margin-top: 140px;
 }
 
 /* body {
@@ -258,6 +264,9 @@ html {
     height: 48vw;
     width: 37vw;
   }
+
+  
+  
 }
 
 @media (max-width: 767px) {
@@ -271,16 +280,21 @@ html {
   .custom-images-vh {
     height: 70vh;
   }
-
 }
 
-/* @media (max-width: 575px) {
-  .lands-dimesions{
-    height: 52vw;
-    width: 40vw;
-    text-align: center;
+@media (max-width: 992px) {
+  
+  .breed {
+    scroll-margin-top: 40px;
   }
-} */
+  .images {
+    scroll-margin-top: 40px;
+  }
+  .testimonials{
+    scroll-margin-top: 40px;
+  }
+
+}
 
 @media (min-width: 768px) {
   .mt-hero-text {
