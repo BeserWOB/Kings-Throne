@@ -38,6 +38,7 @@
   background-color: rgba(218, 165, 32, 1);
   transform: scaleY(3);
 }
+
 /* additional classes */
 html,
 body {
@@ -53,8 +54,7 @@ html {
 .breed {
   scroll-margin-top: 100px;
 }
-
-.images{
+.images {
   scroll-margin-top: 180px;
 }
 
@@ -68,11 +68,16 @@ html {
   text-shadow: 0 0 10px #212121;
 }
 
+.lands-dimesions{
+  height: 200px;
+  width: 200px;
+}
+
 .cards-dimensions {
   width: 200px;
   height: 300px;
 }
-.border-gold{
+.border-gold {
   border: solid 1px rgb(255, 216, 116);
 }
 
@@ -241,6 +246,10 @@ html {
   }
   .custom-images-vh {
     height: 40vh;
+  }
+  .lands-dimesions{
+    height: 100px;
+    width: 48vh;
   }
 }
 
