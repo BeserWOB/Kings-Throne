@@ -1,5 +1,9 @@
 /* Edited Bootstrap classes */
 
+.offcanvas {
+  max-width: 60vw;
+}
+
 .nav-link.active {
   border: rgb(255, 216, 116) solid 1px !important;
   color: rgb(255, 216, 116) !important;
@@ -264,9 +268,6 @@ html {
     height: 48vw;
     width: 37vw;
   }
-
-  
-  
 }
 
 @media (max-width: 767px) {

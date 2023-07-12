@@ -58,6 +58,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
+
 /* SVG Path length calculator */
 /*   const pathLength = document.querySelectorAll('#svgg path')
 
