@@ -22,26 +22,16 @@
   scale: 1.05;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  border: rgb(255, 216, 116) solid 2px;
-  background-color: #002625;
+.carousel-indicators button.thumbnail {
+  width: 100px;
+}
+.carousel-indicators button.thumbnail:not(.active) {
+  opacity: 0.2;
+}
+.carousel-indicators {
+  position: sticky;
 }
 
-.carousel-indicators button {
-  background-color: transparent;
-  border: none;
-  width: 10px;
-  height: 30px;
-  margin: 0 5px;
-  padding: 0;
-  border-radius: 0;
-}
-
-.carousel-indicators .active {
-  background-color: rgba(218, 165, 32, 1);
-  transform: scaleY(3);
-}
 
 /* additional classes */
 html,
@@ -56,16 +46,16 @@ html {
   scroll-behavior: smooth;
 }
 .breed {
-  scroll-margin-top: 100px;
+  padding-top: 5rem;
 }
 .images {
-  scroll-margin-top: 180px;
+  padding-top: 0rem;
 }
-.testimonials{
-  scroll-margin-top: 100px;
+.testimonials {
+  padding-top: 8rem;
 }
-.competitions{
-  scroll-margin-top: 140px;
+.competitions {
+  padding-top: 8rem;
 }
 
 /* body {
@@ -78,7 +68,7 @@ html {
   text-shadow: 0 0 10px #212121;
 }
 
-.lands-dimesions{
+.lands-dimesions {
   height: 52vw;
   width: 40vw;
   text-align: center;
@@ -133,6 +123,7 @@ html {
 }
 
 .transparent-header {
+  border-bottom: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
 }
@@ -264,9 +255,12 @@ html {
   .custom-images-vh {
     height: 40vh;
   }
-  .lands-dimesions{
+  .lands-dimesions {
     height: 48vw;
     width: 37vw;
+  }
+  .images {
+    height: 40vh;
   }
 }
 
@@ -284,22 +278,24 @@ html {
 }
 
 @media (max-width: 992px) {
-  
   .breed {
-    scroll-margin-top: 40px;
+    padding-top: 3rem;
   }
   .images {
-    scroll-margin-top: 40px;
   }
-  .testimonials{
-    scroll-margin-top: 40px;
+  .testimonials {
+    padding-top: 6rem;
   }
-
+  .competitions {
+    padding-top: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
   .mt-hero-text {
     margin-top: 8rem;
+  }
+  .carousel {
   }
 }
 
