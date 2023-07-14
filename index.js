@@ -59,7 +59,12 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* carousel */
+/* carousel swiping enabled */
+$(document).ready(function() {
+  $('.carousel').carousel({
+    touch: true
+  });
+});
 
 
 

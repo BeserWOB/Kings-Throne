@@ -2,6 +2,8 @@
 
 .offcanvas {
   max-width: 60vw;
+  height: 100vh;
+  background-color: #111111;
 }
 
 .nav-link.active {
@@ -26,16 +28,19 @@
 .carousel-control-prev {
   align-items: center;
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+  background-color: aqua;
+}
 
 
 button.navbar-toggler {
   position: relative;
-  height: 40px; 
-  width: 40px; 
+  height: 40px;
+  width: 40px;
   background-color: transparent;
-  border: solid 1px rgb(255, 216, 116); 
+  border: solid 1px rgb(255, 216, 116);
 }
-
 
 .navbar-toggler-icon {
   position: absolute;
@@ -64,9 +69,6 @@ button.navbar-toggler {
   transform: translate(-50%, -50%);
 }
 
-
-
-
 /* additional classes */
 html,
 body {
@@ -74,7 +76,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: "Baskervville", serif;
-  max-width: 1700px;
+  max-width: 1400px;
 }
 html {
   scroll-behavior: smooth;
@@ -83,14 +85,16 @@ html {
   padding-top: 5rem;
 }
 .images {
-  padding-top: 8rem;
-  background: rgba(10, 10, 10, 0.9);
+  scroll-padding-top: 8rem;
 }
 .testimonials {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .competitions {
   padding-top: 8rem;
+}
+.custom-carousel-height {
+  height: unset;
 }
 
 body {
@@ -105,7 +109,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(10, 10, 10, 0.95);
   z-index: -1;
   pointer-events: none;
 }
@@ -234,6 +238,10 @@ body::before {
   background-color: transparent;
   border: solid 1px rgb(255, 216, 116);
 }
+.btn-pulse {
+  animation: btn-pulse 1s ease-in-out alternate infinite;
+}
+
 .hero-image {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -242,11 +250,17 @@ body::before {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.top-object-position {
+  object-position: top;
+}
 .center-object-position {
   object-position: center;
 }
-.top-object-position {
-  object-position: top;
+.right-object-position {
+  object-position: right;
+}
+.left-object-position {
+  object-position: left;
 }
 
 .svg-icon {
@@ -305,9 +319,6 @@ body::before {
     height: 48vw;
     width: 37vw;
   }
-  .images {
-    height: 40vh;
-  }
 }
 
 @media (max-width: 767px) {
@@ -323,11 +334,35 @@ body::before {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .breed {
+    padding-top: 4rem;
+  }
+  .images {
+    padding-top: 100px;
+  }
+  .testimonials {
+    padding-top: 6rem;
+  }
+  .competitions {
+    padding-top: 3rem;
+  }
+  .hero-image {
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .mt-hero-text {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 992px) {
   .breed {
     padding-top: 3rem;
   }
   .images {
+    scroll-margin-top: 150px;
   }
   .testimonials {
     padding-top: 6rem;
@@ -337,11 +372,9 @@ body::before {
   }
 }
 
-@media (min-width: 768px) {
-  .mt-hero-text {
-    margin-top: 8rem;
-  }
-  .carousel {
+@media (min-width: 992px) {
+  .custom-carousel-height {
+    height: 80vh;
   }
 }
 
@@ -359,11 +392,33 @@ body::before {
   }
 
   70% {
-    transform: scale(1.35);
+    transform: scale(1.15);
   }
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes btn-pulse {
+  0% {
+    transform: scale(1);
+    translate: -1%;
+  }
+
+  25% {
+    transform: scaleY(1);
+    translate: 0%;
+  }
+
+  75% {
+    transform: scaleY(1);
+    translate: 1%;
+  }
+
+  100% {
+    transform: scale(1);
+    translate: 0%;
   }
 }
 
@@ -374,7 +429,3 @@ SVG 2 is 2541.4 px long
 SVG 3 is 4125.6 px long
 SVG 4 is 7303.0 px long
 SVG 5 is 4454.1 px long */
-
-
-
-
