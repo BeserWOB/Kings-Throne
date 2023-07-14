@@ -32,6 +32,44 @@
   position: sticky;
 }
 
+button.navbar-toggler {
+  position: relative;
+  height: 40px; 
+  width: 40px; 
+  background-color: transparent;
+  border: solid 1px rgb(255, 216, 116); 
+}
+
+
+.navbar-toggler-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 24px;
+  background-color: rgb(255, 216, 116);
+  border: none;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background-color: rgb(255, 216, 116);
+}
+.navbar-toggler-icon::before {
+  top: -8px;
+  transform: translate(-50%, -50%);
+}
+.navbar-toggler-icon::after {
+  bottom: -10px;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 /* additional classes */
 html,
@@ -49,7 +87,8 @@ html {
   padding-top: 5rem;
 }
 .images {
-  padding-top: 0rem;
+  padding-top: 8rem;
+  background: rgba(10, 10, 10, 0.9);
 }
 .testimonials {
   padding-top: 8rem;
@@ -58,11 +97,22 @@ html {
   padding-top: 8rem;
 }
 
-/* body {
+body {
   background: url("./images/background.jpeg") fixed;
   background-position: center center;
-  background-size: contain;
-} */
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.9);
+  z-index: -1;
+  pointer-events: none;
+}
 
 .text-shadow {
   text-shadow: 0 0 10px #212121;
@@ -114,7 +164,7 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .header-scroll {
-  background-color: #212529;
+  background-color: #111111;
   border-bottom: rgb(255, 216, 116) solid 1px;
   transition: all 0.3s ease-in-out;
 }

@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 });
 
 /* Onscroll Header is transparent when it comes to images section */
-
+/* 
 window.addEventListener("scroll", function () {
   let carouselSection = document.getElementById("images");
   let header = document.querySelector(".header");
@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
   } else {
     header.classList.remove("transparent-header");
   }
-});
+}); */
 
 
 /* Onscroll animation of the SVG Icons for breed section */
