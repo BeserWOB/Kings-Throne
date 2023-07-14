@@ -59,6 +59,11 @@ window.addEventListener("scroll", () => {
 });
 
 
+/* carousel */
+
+
+
+
 /* SVG Path length calculator */
 /*   const pathLength = document.querySelectorAll('#svgg path')
 
