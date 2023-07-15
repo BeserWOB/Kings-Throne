@@ -85,7 +85,7 @@ html {
   padding-top: 5rem;
 }
 .images {
-  scroll-padding-top: 8rem;
+
 }
 .testimonials {
   padding-top: 10rem;
@@ -244,11 +244,6 @@ body::before {
 
 .hero-image {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-  transition: all ease-in-out 1s;
-}
-.hero-image:hover{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
-
 }
 
 .carousel-image {
@@ -256,8 +251,6 @@ body::before {
 }
 .carousel-image-left{
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-
-
 }
 
 .top-object-position {
@@ -349,7 +342,7 @@ body::before {
     padding-top: 4rem;
   }
   .images {
-    padding-top: 100px;
+
   }
   .testimonials {
     padding-top: 6rem;
@@ -360,9 +353,11 @@ body::before {
   .hero-image {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   }
-  .carousel-image{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
+  .carousel-image {
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .carousel-image-left{
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -376,7 +371,7 @@ body::before {
     padding-top: 3rem;
   }
   .images {
-    scroll-margin-top: 100px;
+
   }
   .testimonials {
     padding-top: 6rem;
