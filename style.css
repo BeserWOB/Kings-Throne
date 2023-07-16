@@ -26,11 +26,20 @@
 
 .carousel-control-next,
 .carousel-control-prev {
-  align-items: center;
+  cursor: pointer;
+  filter: invert(1);
+  scale: 1.2;
 }
-.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: absolute;
+
+}
 .carousel-control-prev-icon{
-  background-color: aqua;
+  left: 0;
+}
+.carousel-control-next-icon{
+  right: 0;
 }
 
 
