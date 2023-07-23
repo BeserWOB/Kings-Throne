@@ -1,4 +1,4 @@
-/* Onscroll header turns white */
+/* Onscroll header turns black */
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
   let logo = document.querySelector(".logo");
@@ -11,31 +11,6 @@ window.addEventListener("scroll", function () {
     logo.classList.remove("logo-scroll");
   }
 });
-
-/* Onscroll Header is transparent when it comes to images section */
-/* 
-window.addEventListener("scroll", function () {
-  let carouselSection = document.getElementById("images");
-  let header = document.querySelector(".header");
-  let logo = document.querySelector(".logo");
-  let navbarBottom = document
-    .querySelector(".header")
-    .getBoundingClientRect().bottom;
-
-  let carouselSectionTop = carouselSection.getBoundingClientRect().top;
-  let carouselSectionBottom = carouselSection.getBoundingClientRect().bottom;
-
-  if (
-    carouselSectionTop < navbarBottom &&
-    carouselSectionBottom > navbarBottom
-  ) {
-    header.classList.add("transparent-header");
-    logo.classList.remove("logo-scroll");
-  } else {
-    header.classList.remove("transparent-header");
-  }
-}); */
-
 
 /* Onscroll animation of the SVG Icons for breed section */
 window.addEventListener("scroll", () => {
@@ -58,6 +33,36 @@ window.addEventListener("scroll", () => {
   });
 });
 
+/* Onscroll animation of the "Lands" Icons for lands section */
+window.addEventListener("scroll", () => {
+  const landsIcons = [
+    { element: document.getElementById("land-1"), bottom: 0 },
+    { element: document.getElementById("land-2"), bottom: 0 },
+    { element: document.getElementById("land-3"), bottom: 0 },
+    { element: document.getElementById("land-4"), bottom: 0 },
+    { element: document.getElementById("land-5"), bottom: 0 },
+    { element: document.getElementById("land-6"), bottom: 0 },
+    { element: document.getElementById("land-7"), bottom: 0 },
+    { element: document.getElementById("land-8"), bottom: 0 },
+    { element: document.getElementById("land-9"), bottom: 0 },
+    { element: document.getElementById("land-10"), bottom: 0 },
+    { element: document.getElementById("land-11"), bottom: 0 },
+    { element: document.getElementById("land-12"), bottom: 0 },
+    { element: document.getElementById("land-13"), bottom: 0 },
+    { element: document.getElementById("land-14"), bottom: 0 },
+    { element: document.getElementById("land-15"), bottom: 0 },
+  ];
+
+  landsIcons.forEach((landsIcon) => {
+    landsIcon.bottom =
+    landsIcon.element.getBoundingClientRect().bottom + window.innerHeight / 5;
+
+    if (window.innerHeight > landsIcon.bottom) {
+      landsIcon.element.classList.add("lands-animated");
+    }
+  });
+});
+
 
 /* carousel swiping enabled */
 $(document).ready(function() {
@@ -70,6 +75,7 @@ $(document).ready(function() {
 
 
 
+/* lands-animated */
 
 /* SVG Path length calculator */
 /*   const pathLength = document.querySelectorAll('#svgg path')

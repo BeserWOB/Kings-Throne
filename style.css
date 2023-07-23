@@ -134,6 +134,12 @@ body::before {
   text-align: center;
   max-width: 200px;
   max-height: 200px;
+  opacity: 0;
+}
+
+.lands-animated {
+  opacity: 1;
+  transition: all 2s ease-in-out ;
 }
 
 .cards-dimensions {
