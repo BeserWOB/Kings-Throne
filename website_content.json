@@ -1,0 +1,30 @@
+{
+    "pageTitle": "King's Throne Serbia",
+    "navbar": {
+        "home": "Home",
+        "breed": "Breed",
+        "images": "Images",
+        "testimonials": "Testimonials",
+        "competitions": "Competitions",
+        "puppies": "Puppies",
+        "dogs": {
+            "males": "Males",
+            "females": "Females"
+        }
+    },
+    "heroSection": {
+        "heading": "Welcome to world of American Akitas!",
+        "description": "Short description about American Akitas."
+    },
+    "sections": {
+        "whatAreTheyLike": {
+            "title": "What are they like?",
+            "points": {
+                "powerfulAndSturdyBuild": "Powerful and Sturdy Build",
+                "confidentAndIndependent": "Confident and Independent",
+                "dietAndNutrition": "Diet and Nutrition",
+                "intelligentAndTrainable": "Intelligent and Trainable"
+            }
+        }
+    }
+}

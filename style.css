@@ -436,3 +436,48 @@ SVG 4 is 7303.0 px long
 SVG 5 is 4454.1 px long */
 
 
+
+
+
+/* ChatGpt CSS */
+
+.fullscreen-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.button-container {
+  z-index: 10;
+}
+
+.landing-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.landing-button:hover {
+  background-color: #f8f8f8;
+}
+
+
