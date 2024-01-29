@@ -1,3 +1,11 @@
+
+fetch('website_content.json')
+.then(response => response.json())
+.then(data => {
+    let dataJSON = data;
+})
+.catch(error => console.error('Error fetching JSON:', error));
+
 /* Onscroll header turns black */
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
