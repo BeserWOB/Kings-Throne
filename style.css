@@ -437,8 +437,7 @@ SVG 5 is 4454.1 px long */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* This makes sure it covers the full viewport height */
-  width: 100%; /* This covers the full viewport width */
+  height: 100vh; 
 }
 
 
