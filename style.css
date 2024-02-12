@@ -433,7 +433,7 @@ SVG 5 is 4454.1 px long */
 /* ChatGpt CSS */
 
 .gif-background {
-  background-image: url('/images/Logo_GIF.gif');
+  background-image: url('images/Logo_GIF.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
